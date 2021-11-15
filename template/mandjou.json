@@ -1,0 +1,1063 @@
+[
+    {
+        "question": "*Bonjour\nbienvenue chez Miss ZAHUI\nPoser une *question ou utiliser le menu* ci-dessous\n1- Voir nos *Plats* \n2- Mon *Panier*\n3- *Comment ça marche*",
+        "img": "./img/logo.jpeg",
+        "trainings": [
+            {
+                "keyword": "bonjour",
+                "phrases": [
+                    "Bonjour comment allez-vous",
+                    "bonjour comment allez-vous",
+                    "Bonjour j'aimerais avoir des information",
+                    "bonjour j'aimerais avoir des information",
+                    "salut",
+                    "hello",
+                    "coucou",
+                    "hey",
+                    "hi",
+                    "Bonjour comment allez-vous",
+                    "bonjour comment allez-vous",
+                    "Bonjour j'aimerais avoir des information",
+                    "bonjour j'aimerais avoir des information",
+                    "bonjour comment ça va",
+                    "bonjour",
+                    "coucou comment ça va",
+                    "coucou",
+                    "salut",
+                    "bonjour",
+                    "ndk",
+                    "comment ça va",
+                    "comment ça allez-vous"
+                ]
+            }
+        ],
+        "answers": [
+            "bonjour",
+            "hi"
+        ],
+        "answer": "response",
+        "code": "response"
+    },
+    {
+        "question": "Voici nos plat,sélectionnez un *numéro* pour faire votre choix 😉\nP1- Poisson *SOSSO de grande taille*\nP2-Poisson *SOSSO de taille moyenne*\nL1- *LOTH GRAND*\nL2- *LOTH MOYEN*\nPL1- Un *POULET ENTIER*\nD1- Le *DIDON*\nPL2- Un *1/2 POULET*\n\n----NOS POISSONS------\n\nC1- Un *CARPE GEANT*\nC2- Un *CARPE GRAND*\nC3- Un *CARPE MOYEN*\nS1- Un *SOLE EXTRA*\nS2- Un *SOLE GRAND*\nS3- Un *SOLE MOYEN*\nS4- Un *SOLE PETIT*\nS5- Un *SOSSO EXTRA GEANT*\nS6- Un *SOSSO EXTRA*\nS7- Un *SOSSO PETIT*\n\n----NOS GARNITURE------\n\nF1- Des *FRITES D'IGNAME*\nF2- Des *FRITES DE POMME DE TERRE*\nA1- De l'*ALLOCO*\nA2- Une *BOULE D'ATTIEKE PETIT FORMAT*\nA3- Une *BOULE D'ATTIEKE GRAND FORMAT*\n\n----NOS BOISSONS------\n\nT1- Du jus de *TOMMY*\nP1- Du jus *PASSION*\nB1- Du jus de *BISSAP*\nG1- Du jus de *GNAMANKOUDJI*\nVous devez choisir votre catégorie de produits en entrant le nom",
+        "trainings": [
+            {
+                "keyword": "menu",
+                "phrases": [
+                    "1",
+                    "catégorie",
+                    "voir le menu",
+                    "montrez moi les produits",
+                    "les plats"
+                ]
+            }
+          
+        ],
+        "answers": [
+           
+            "menu"
+        ],
+        "answer": "1",
+        "code": "1"
+    },
+
+
+
+
+
+    {
+        "question": "*JUS DE GNAMANKOUDJI*\nPRIX: *2000FCFA*",
+        "img": "./img/gnamakoudji.jpeg",
+        "trainings": [
+            {
+                "keyword": "gnamankoudji",
+                "phrases": [
+                    "je choisis la gnamankoudji",
+                    "je choisis la gnamankoudji",
+                    "je prends la gnamankoudji",
+                    "je prends la gnamankoudjis",
+                    "montrez moi les produits de la gnamankoudji",
+                    "montrez moi les produits de la gnamankoudjis",
+                    "montrez moi les produits de la catégorie gnamankoudji",
+                    "les gnamankoudji",
+                    "je veux les gnamankoudji"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "G1",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "gnamankoudji"
+        ],
+        "answer": "G1",
+        "code": "G1"
+       
+    },
+    {
+        "question": "*POISSON SOSSO - EXTRA GEANT*\nPRIX: *5000FCFA*",
+        "img": "./img/sossogrand.jpeg",
+        "trainings": [
+            {
+                "keyword": "sosso extra grand",
+                "phrases": [
+                    "je choisis la sosso extra grand",
+                    "je choisis la sosso extra grand",
+                    "je prends la sosso extra grand",
+                    "je prends la sosso extra grands",
+                    "montrez moi les produits de la sosso extra grand",
+                    "montrez moi les produits de la sosso extra grands",
+                    "montrez moi les produits de la catégorie sosso extra grand",
+                    "les sosso extra grand",
+                    "je veux les sosso extra grand"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "S5",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "sosso extra grand"
+        ],
+        "answer": "S5",
+        "code": "S5"
+       
+    },
+    {
+        "question": "*POISSON SOSSO - GEANT*\nPRIX: *2500FCFA*",
+        "img": "./img/sossogrand.jpeg",
+        "trainings": [
+            {
+                "keyword": "sosso grand",
+                "phrases": [
+                    "je choisis la sosso grand",
+                    "je choisis la sosso grand",
+                    "je prends la sosso grand",
+                    "je prends la sosso grands",
+                    "montrez moi les produits de la sosso grand",
+                    "montrez moi les produits de la sosso grands",
+                    "montrez moi les produits de la catégorie sosso grand",
+                    "les sosso grand",
+                    "je veux les sosso grand"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "S6",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "sosso grand"
+        ],
+        "answer": "S6",
+        "code": "S6"
+       
+    },
+    {
+        "question": "*POISSON SOSSO - PETIT*\nPRIX: *2000FCFA*",
+        "img": "./img/sossogrand.jpeg",
+        "trainings": [
+            {
+                "keyword": "sosso petit",
+                "phrases": [
+                    "je choisis la sosso petit",
+                    "je choisis la sosso petit",
+                    "je prends la sosso petit",
+                    "je prends la sosso petits",
+                    "montrez moi les produits de la sosso petit",
+                    "montrez moi les produits de la sosso petits",
+                    "montrez moi les produits de la catégorie sosso petit",
+                    "les sosso petit",
+                    "je veux les sosso petit"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "S7",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "sosso petit"
+        ],
+        "answer": "S7",
+        "code": "S7"
+       
+    },
+
+    {
+        "question": "*POISSON LOTH - MOYEN*\nPRIX: *2500FCFA*",
+        "img": "./img/loth.jpeg",
+        "trainings": [
+            {
+                "keyword": "loth moyen",
+                "phrases": [
+                    "je choisis la loth moyen",
+                    "je choisis la loth moyen",
+                    "je prends la loth moyen",
+                    "je prends la loth moyens",
+                    "montrez moi les produits de la loth moyen",
+                    "montrez moi les produits de la loth moyens",
+                    "montrez moi les produits de la catégorie loth moyen",
+                    "les loth moyen",
+                    "je veux les loth moyen"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "L2",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "loth moyen"
+        ],
+        "answer": "L2",
+        "code": "L2"
+       
+    },
+    {
+        "question": "*POISSON LOTH - GRAND*\nPRIX: *2500FCFA*",
+        "img": "./img/loth.jpeg",
+        "trainings": [
+            {
+                "keyword": "loth grand",
+                "phrases": [
+                    "je choisis la loth grand",
+                    "je choisis la loth grand",
+                    "je prends la loth grand",
+                    "je prends la loth grands",
+                    "montrez moi les produits de la loth grand",
+                    "montrez moi les produits de la loth grands",
+                    "montrez moi les produits de la catégorie loth grand",
+                    "les loth grand",
+                    "je veux les loth grand"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "L1",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "loth grand"
+        ],
+        "answer": "L1",
+        "code": "L1"
+       
+    },
+
+    {
+        "question": "*LE POULET-ENTIER*\nPRIX:*4000FCFA*",
+        "img": "./img/poulet.jpeg",
+        "trainings": [
+            {
+                "keyword": "poulet entier",
+                "phrases": [
+                    "je choisis la poulet entier",
+                    "je choisis la poulet entier",
+                    "je prends la poulet entier",
+                    "je prends la poulet entier",
+                    "montrez moi les produits de la poulet entier",
+                    "montrez moi les produits de la poulet entier",
+                    "montrez moi les produits de la catégorie poulet entier",
+                    "les poulet entier",
+                    "je veux les poulet entier"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "PL1",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "poulet entier"
+        ],
+        "answer": "PL1",
+        "code": "PL1"
+       
+    },
+    {
+        "question": "*LE 1/2 POULET-ENTIER*\nPRIX:*2500FCFA*",
+        "img": "./img/poulet.jpeg",
+        "trainings": [
+            {
+                "keyword": "demi poulet",
+                "phrases": [
+                    "je choisis la demi poulet",
+                    "je choisis la demi poulet",
+                    "je prends la demi poulet",
+                    "je prends la demi poulet",
+                    "montrez moi les produits de la demi poulet",
+                    "montrez moi les produits de la demi poulet",
+                    "montrez moi les produits de la catégorie demi poulet",
+                    "les demi poulet",
+                    "je veux les demi poulet"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "PL2",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "demi poulet"
+        ],
+        "answer": "PL2",
+        "code": "PL2"
+       
+    },
+
+
+    {
+        "question": "*DES MORCEAUX DE DINDON - 2000*\nPRIX:*2000FCFA*",
+        "img": "./img/didon.jpeg",
+        "trainings": [
+            {
+                "keyword": "dindon",
+                "phrases": [
+                    "je choisis la dindon",
+                    "je choisis la dindon",
+                    "je prends la dindon",
+                    "je prends la dindon",
+                    "montrez moi les produits de la dindon",
+                    "montrez moi les produits de la dindon",
+                    "montrez moi les produits de la catégorie dindon",
+                    "les dindon",
+                    "je veux les dindon"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "D1",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "dindon"
+        ],
+        "answer": "D1",
+        "code": "D1",
+        "code": "D1"
+       
+    },
+    {
+        "question": "*DES MORCEAUX DE DINDON - 1000*\nPRIX:*1000FCFA*",
+        "img": "./img/didon.jpeg",
+        "trainings": [
+            {
+                "keyword": "dindon",
+                "phrases": [
+                    "je choisis la dindon",
+                    "je choisis la dindon",
+                    "je prends la dindon",
+                    "je prends la dindon",
+                    "montrez moi les produits de la dindon",
+                    "montrez moi les produits de la dindon",
+                    "montrez moi les produits de la catégorie dindon",
+                    "les dindon",
+                    "je veux les dindon"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "D2",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "dindon"
+        ],
+        "answer": "D2",
+        "code": "D2"
+       
+    },
+
+
+    {
+        "question": "*DES FRITE D'IGNAME*\nPRIX:*500FCFA*",
+        "img": "./img/figname.jpeg",
+        "trainings": [
+            {
+                "keyword": "frite igname",
+                "phrases": [
+                    "je choisis la frite igname",
+                    "je choisis la frite igname",
+                    "je prends la frite igname",
+                    "je prends la frite igname",
+                    "montrez moi les produits de la frite igname",
+                    "montrez moi les produits de la frite igname",
+                    "montrez moi les produits de la catégorie frite igname",
+                    "les frite igname",
+                    "je veux les frite igname"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "F1",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "frite igname"
+        ],
+        "answer": "F1",
+        "code": "F1"
+       
+    },
+    {
+        "question": "*DES FRITE DE POMME DE TERRE*\nPRIX:*500FCFA*",
+        "img": "./img/fipomme.jpeg",
+        "trainings": [
+            {
+                "keyword": "frite pomme de terre",
+                "phrases": [
+                    "je choisis la frite pomme de terre",
+                    "je choisis la frite pomme de terre",
+                    "je prends la frite pomme de terre",
+                    "je prends la frite pomme de terre",
+                    "montrez moi les produits de la frite pomme de terre",
+                    "montrez moi les produits de la frite pomme de terre",
+                    "montrez moi les produits de la catégorie frite pomme de terre",
+                    "les frite pomme de terre",
+                    "je veux les frite pomme de terre"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "F2",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "frite pomme de terre"
+        ],
+        "answer": "F2",
+        "code": "F2"
+       
+    },
+    {
+        "question": "*DE L'ALLOCO*\nPRIX:*500FCFA*",
+        "img": "./img/alloco.jpeg",
+        "trainings": [
+            {
+                "keyword": "alloco",
+                "phrases": [
+                    "je choisis la alloco",
+                    "je choisis la alloco",
+                    "je prends la alloco",
+                    "je prends la alloco",
+                    "montrez moi les produits de la alloco",
+                    "montrez moi les produits de la alloco",
+                    "montrez moi les produits de la catégorie alloco",
+                    "les alloco",
+                    "je veux les alloco"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "A1",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "alloco"
+        ],
+        "answer": "A1",
+        "code": "A1"
+       
+    },
+    {
+        "question": "*L'ATTIEKE - TAILLE MOYENNE*\nPRIX:*200FCFA*",
+        "img": "./img/attieke.jpeg",
+        "trainings": [
+            {
+                "keyword": "attieke",
+                "phrases": [
+                    "je choisis la attieke",
+                    "je choisis la attieke",
+                    "je prends la attieke",
+                    "je prends la attieke",
+                    "montrez moi les produits de la attieke",
+                    "montrez moi les produits de la attieke",
+                    "montrez moi les produits de la catégorie attieke",
+                    "les attieke",
+                    "je veux les attieke"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "A2",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "attieke"
+        ],
+        "answer": "A2",
+        "code": "A2"
+       
+    },
+    {
+        "question": "*L'ATTIEKE - GRANDE TAILLE*\nPRIX:*500FCFA*",
+        "img": "./img/attieke.jpeg",
+        "trainings": [
+            {
+                "keyword": "attieke",
+                "phrases": [
+                    "je choisis la attieke",
+                    "je choisis la attieke",
+                    "je prends la attieke",
+                    "je prends la attieke",
+                    "montrez moi les produits de la attieke",
+                    "montrez moi les produits de la attieke",
+                    "montrez moi les produits de la catégorie attieke",
+                    "les attieke",
+                    "je veux les attieke"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "A3",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "attieke"
+        ],
+        "answer": "A3",
+        "code": "A3"
+       
+    },
+
+
+    {
+        "question": "*JUS DE TOMMY*\nPRIX:*2000FCFA*",
+        "img": "./img/tommy.jpeg",
+        "trainings": [
+            {
+                "keyword": "tommy",
+                "phrases": [
+                    "je choisis la tommy",
+                    "je choisis la tommy",
+                    "je prends la tommy",
+                    "je prends la tommy",
+                    "montrez moi les produits de la tommy",
+                    "montrez moi les produits de la tommy",
+                    "montrez moi les produits de la catégorie tommy",
+                    "les tommy",
+                    "je veux les tommy"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "T1",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "tommy"
+        ],
+        "answer": "T1",
+        "code": "T1"
+       
+    },
+    {
+        "question": "*JUS DE BISSAP*\nPRIX:*2000FCFA*",
+        "img": "./img/bissap.jpeg",
+        "trainings": [
+            {
+                "keyword": "bissap",
+                "phrases": [
+                    "je choisis la bissap",
+                    "je choisis la bissap",
+                    "je prends la bissap",
+                    "je prends la bissap",
+                    "montrez moi les produits de la bissap",
+                    "montrez moi les produits de la bissap",
+                    "montrez moi les produits de la catégorie bissap",
+                    "les bissap",
+                    "je veux les bissap"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "B1",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "bissap"
+        ],
+        "answer": "B1",
+        "code": "B1"
+       
+    },
+
+    {
+        "question": "*CARPE GEANT*\nPRIX:*2000FCFA*",
+        "img": "./img/carpe.jpeg",
+        "trainings": [
+            {
+                "keyword": "carpe",
+                "phrases": [
+                    "je choisis la carpe",
+                    "je choisis la carpe",
+                    "je prends la carpe",
+                    "je prends la carpe",
+                    "montrez moi les produits de la carpe",
+                    "montrez moi les produits de la carpe",
+                    "montrez moi les produits de la catégorie carpe",
+                    "les carpe",
+                    "je veux les carpe"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "C1",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "carpe"
+        ],
+        "answer": "C1",
+        "code": "C1"
+       
+    },
+    {
+        "question": "*CARPE GRAND*\nPRIX:*5000FCFA*",
+        "img": "./img/carpe.jpeg",
+        "trainings": [
+            {
+                "keyword": "carpe",
+                "phrases": [
+                    "je choisis la carpe",
+                    "je choisis la carpe",
+                    "je prends la carpe",
+                    "je prends la carpe",
+                    "montrez moi les produits de la carpe",
+                    "montrez moi les produits de la carpe",
+                    "montrez moi les produits de la catégorie carpe",
+                    "les carpe",
+                    "je veux les carpe"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "C2",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "carpe"
+        ],
+        "answer": "C2",
+        "code": "C2"
+       
+    },
+    {
+        "question": "*CARPE MOYEN*\nPRIX:*2500FCFA*",
+        "img": "./img/carpe.jpeg",
+        "trainings": [
+            {
+                "keyword": "carpe",
+                "phrases": [
+                    "je choisis la carpe",
+                    "je choisis la carpe",
+                    "je prends la carpe",
+                    "je prends la carpe",
+                    "montrez moi les produits de la carpe",
+                    "montrez moi les produits de la carpe",
+                    "montrez moi les produits de la catégorie carpe",
+                    "les carpe",
+                    "je veux les carpe"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "C3",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "carpe"
+        ],
+        "answer": "C3",
+        "code": "C3"
+       
+    },
+
+    {
+        "question": "*SOLE GEANT*\nPRIX:*6000FCFA*",
+        "img": "./img/sole.jpeg",
+        "trainings": [
+            {
+                "keyword": "sole",
+                "phrases": [
+                    "je choisis la sole",
+                    "je choisis la sole",
+                    "je prends la sole",
+                    "je prends la sole",
+                    "montrez moi les produits de la sole",
+                    "montrez moi les produits de la sole",
+                    "montrez moi les produits de la catégorie sole",
+                    "les sole",
+                    "je veux les sole"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "S1",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "sole"
+        ],
+        "answer": "S1",
+        "code": "S1"
+       
+    },
+    {
+        "question": "*SOLE GRAND*\nPRIX:*5000FCFA*",
+        "img": "./img/sole.jpeg",
+        "trainings": [
+            {
+                "keyword": "sole",
+                "phrases": [
+                    "je choisis la sole",
+                    "je choisis la sole",
+                    "je prends la sole",
+                    "je prends la sole",
+                    "montrez moi les produits de la sole",
+                    "montrez moi les produits de la sole",
+                    "montrez moi les produits de la catégorie sole",
+                    "les sole",
+                    "je veux les sole"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "S2",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "sole"
+        ],
+        "answer": "S2",
+        "code": "S2"
+       
+    },
+    {
+        "question": "*SOLE MOYEN*\nPRIX:*4000FCFA*",
+        "img": "./img/sole.jpeg",
+        "trainings": [
+            {
+                "keyword": "sole",
+                "phrases": [
+                    "je choisis la sole",
+                    "je choisis la sole",
+                    "je prends la sole",
+                    "je prends la sole",
+                    "montrez moi les produits de la sole",
+                    "montrez moi les produits de la sole",
+                    "montrez moi les produits de la catégorie sole",
+                    "les sole",
+                    "je veux les sole"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "S3",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "sole"
+        ],
+        "answer": "S3",
+        "code": "S3"
+       
+    },
+    {
+        "question": "*SOLE PETIT*\nPRIX:*3000FCFA*",
+        "img": "./img/sole.jpeg",
+        "trainings": [
+            {
+                "keyword": "sole",
+                "phrases": [
+                    "je choisis la sole",
+                    "je choisis la sole",
+                    "je prends la sole",
+                    "je prends la sole",
+                    "montrez moi les produits de la sole",
+                    "montrez moi les produits de la sole",
+                    "montrez moi les produits de la catégorie sole",
+                    "les sole",
+                    "je veux les sole"
+                ]
+            }
+        ],
+        "butonsContent": {
+            "contentText": "Commander",
+            "footerText": "Passer ma commande",
+            "headerType": 1
+        },
+        "buttons": [
+            {
+                "buttonId": "S4",
+                "buttonText": {
+                    "displayText": "COMMANDER"
+                },
+                "type": 1
+            }
+           
+        ],
+        "answers": [
+            "sole"
+        ],
+        "answer": "S4",
+        "code": "S4"
+       
+    }
+]

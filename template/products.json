@@ -1,0 +1,184 @@
+[
+    {
+        "id": "G1",
+        "text": "*JUS DE GNAMANKOUDJI*\nPRIX: *2000FCFA*",
+        "name": "JUS DE GNAMANKOUDJI",
+        "img": "./img/gnamakoudji.jpeg",
+        "price": 2000
+    },
+    {
+        "id": "T1",
+        "text": "*JUS DE TOMMY*\nPRIX: *2000FCFA*",
+        "name": "JUS DE TOMMY",
+        "img": "./img/tommy.jpeg",
+        "price": 2000
+    },
+
+    {
+        "id": "S5",
+        "text": "*POISSON SOSSO - EXTRA GEANT*\nPRIX:*5000FCFA*",
+        "name": "POISSON SOSSO - EXTRA GEANT",
+        "img": "./img/sossogrand.jpeg",
+        "price": 5000
+    },
+    {
+        "id": "S6",
+        "text": "*POISSON SOSSO - GEANT*\nPRIX:*2500FCFA*",
+        "name": "POISSON SOSSO -  GEANT",
+        "img": "./img/sossogrand.jpeg",
+        "price": 2500
+    },
+    {
+        "id": "S7",
+        "text": "*POISSON SOSSO - PETIT*\nPRIX:*2000FCFA*",
+        "name": "POISSON SOSSO - PETIT",
+        "img": "./img/sossogrand.jpeg",
+        "price": 2000
+    },
+
+    {
+        "id": "L1",
+        "text": "*POISSON LOTH - GRAND*\nPRIX:*4000FCFA*",
+        "name": "POISSON LOTH - GRAND",
+        "img": "./img/loth.jpeg",
+        "price": 3000
+    },
+   
+    {
+        "id": "L2",
+        "text": "*POISSON LOTH - MOYEN*\nPRIX:*2500FCFA*",
+        "name": "POISSON LOTH - MOYEN",
+        "img": "./img/loth.jpeg",
+        "price": 2500
+    },
+    {
+        "id": "PL1",
+        "text": "*LE POULET-ENTIER*\nPRIX:*4000FCFA*",
+        "name": "LE POULET-ENTIER",
+        "img": "./img/poulet.jpeg",
+        "price": 4000
+    },
+    {
+        "id": "PL2",
+        "text": "*LE 1/2 POULET-ENTIER*\nPRIX:*2500FCFA*",
+        "name": "LE 1/2 POULET-ENTIER",
+        "img": "./img/poulet.jpeg",
+        "price": 2500
+    },
+    {
+        "id": "D1",
+        "text": "*DES MORCEAUX DE DINDON - 2000*\nPRIX:*2000FCFA*",
+        "name": "MORCEAUX DE DINDON",
+        "img": "./img/didon.jpeg",
+        "price": 2000
+    },
+    {
+        "id": "D2",
+        "text": "*DES MORCEAUX DE DINDON - 1000*\nPRIX:*1000FCFA*",
+        "name": "MORCEAUX DE DINDON",
+        "img": "./img/didon.jpeg",
+        "price": 1000
+    },
+    {
+        "id": "F1",
+        "text": "*DES FRITE D'IGNAME*\nPRIX:*500FCFA*",
+        "name": "DES FRITE D'IGNAME",
+        "img": "./img/figname.jpeg",
+        "price": 500
+    },
+    {
+        "id": "F2",
+        "text": "*DES FRITE DE POMME DE TERRE*\nPRIX:*500FCFA*",
+        "name": "DES FRITE DE TERRE",
+        "img": "./img/fipomme.jpeg",
+        "price": 500
+    },
+    {
+        "id": "A1",
+        "text": "*DE L'ALLOCO*\nPRIX:*500FCFA*",
+        "name": "DE L'ALLOCO",
+        "img": "./img/alloco.jpeg",
+        "price": 500
+    }
+    ,
+    {
+        "id": "A2",
+        "text": "*L'ATTIEKE - TAILLE MOYENNE*\nPRIX:*200FCFA*",
+        "name": "L'ATTIEKE",
+        "img": "./img/attieke.jpeg",
+        "price": 200
+    },
+    {
+        "id": "A3",
+        "text": "*L'ATTIEKE - GRANDE TAILLE*\nPRIX:*500FCFA*",
+        "name": "L'ATTIEKE",
+        "img": "./img/attieke.jpeg",
+        "price": 500
+    },
+    {
+        "id": "T1",
+        "text": "*JUS DE TOMMY*\nPRIX:*2000FCFA*",
+        "name": "JUS DE TOMMY",
+        "img": "./img/tommy.jpeg",
+        "price": 2000
+    },
+    {
+        "id": "B1",
+        "text": "*JUS DE BISSAP*\nPRIX:*2000FCFA*",
+        "name": "JUS DE BISSAP",
+        "img": "./img/bissap.jpeg",
+        "price": 2000
+    },
+
+    {
+        "id": "C1",
+        "text": "*CARPE GEANT*\nPRIX:*2000FCFA*",
+        "name": "CARPE GEANT",
+        "img": "./img/carpe.jpeg",
+        "price": 2000
+    },
+    {
+        "id": "C2",
+        "text": "*CARPE GRAND*\nPRIX:*5000FCFA*",
+        "name": "CARPE GRAND",
+        "img": "./img/carpe.jpeg",
+        "price": 5000
+    },
+    {
+        "id": "C3",
+        "text": "*CARPE MOYEN*\nPRIX:*2500FCFA*",
+        "name": "CARPE MOYEN",
+        "img": "./img/carpe.jpeg",
+        "price": 2500
+    },
+
+
+    {
+        "id": "S1",
+        "text": "*SOLE GEANT*\nPRIX:*6000FCFA*",
+        "name": "SOLE GEANT",
+        "img": "./img/sole.jpeg",
+        "price": 6000
+    },
+    {
+        "id": "S2",
+        "text": "*SOLE GRAND*\nPRIX:*5000FCFA*",
+        "name": "SOLE GRAND",
+        "img": "./img/sole.jpeg",
+        "price": 5000
+    },
+    {
+        "id": "S3",
+        "text": "*SOLE MOYEN*\nPRIX:*4000FCFA*",
+        "name": "SOLE MOYEN",
+        "img": "./img/sole.jpeg",
+        "price": 4000
+    },
+    {
+        "id": "S4",
+        "text": "*SOLE PETIT*\nPRIX:*3000FCFA*",
+        "name": "SOLE PETIT",
+        "img": "./img/sole.jpeg",
+        "price": 3000
+    }
+]
