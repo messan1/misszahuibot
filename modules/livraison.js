@@ -184,7 +184,7 @@ async function ValidateMessage(response, data, id, client, redisclient, message,
                 //console.log('Result: ', result); //return object success
 
 
-                SendTextMessage(client, id, `Votre commande à été validé nous vous contacterons pour la livraison et la paiement`)
+                SendTextMessage(client, id, `Votre commande à été validé nous vous contacterons pour la livraison et le paiement`)
                     .then(async (result) => {
 
 
