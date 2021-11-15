@@ -5,16 +5,15 @@ const authToken = "315ecdda44ad49ba082503cc17aebe8d";
 const twclient = require('twilio')(accountSid, authToken);
 let authKeyForDeBings = '07f4ea27ecb8ba5356bd7937a7e740'
 const { sendMessage } = require("./Message.js")
-
-
-let cart = [];
 const axios = require('axios');
 
-async function Livraison(response, data, id, client, redisclient, message) {
+async function Livraison(response, data, id, client, redisclient, message,cart) {
 
     let cartdata = await cart.items()
 
-    let dataredis = await redisclient.get(id)
+    let dataredis = await redisclient.get(id+"chat")
+
+    console.log(dataredis)
 
     if (response.intent === "facture" || response.intent === "commande") {
 
@@ -79,6 +78,7 @@ async function Livraison(response, data, id, client, redisclient, message) {
 
 async function Recap(response, data, id, client, redisclient, message, cart) {
 
+    console.log("recap")
     let cartdata = await cart.items()
 
     let msg = "";
@@ -91,8 +91,8 @@ async function Recap(response, data, id, client, redisclient, message, cart) {
     })
     
 
-    let livraisonprix = await redisclient.get(id + 'prixlivraison');
-    let livraisonlieu = await redisclient.get(id + 'lieulivraison');
+    let livraisonprix = await redisclient.get(id + "chat" + 'prixlivraison');
+    let livraisonlieu = await redisclient.get(id + "chat" + 'lieulivraison');
 
 
     total = total + parseInt(livraisonprix)
@@ -132,8 +132,8 @@ async function ValidateMessage(response, data, id, client, redisclient, message)
     cart = JSON.parse(cartdata)
     let numero = Math.round(Math.random() * 500)
 
-    let livraisonprix = await redisclient.get(id + 'prixlivraison');
-    let livraisonlieu = await redisclient.get(id + 'lieulivraison');
+    let livraisonprix = await redisclient.get(id + "chat" + 'prixlivraison');
+    let livraisonlieu = await redisclient.get(id + "chat" + 'lieulivraison');
 
 
     const invoice = {
@@ -192,23 +192,19 @@ async function ValidateMessage(response, data, id, client, redisclient, message)
 
 
 
+                        let cartdata = await cart.items()
 
-                        let temp = []
                         let msg = "";
-
-                        cart.forEach((value) => {
-                            if (value._id !== id) {
-                                temp.push(value)
-                            } if (value._id === id) {
-                                msg = msg + value.item + " x " + value.quantity + "\n"
-                            }
-
+                        let total = await cart.total();
+                    
+                        cartdata.forEach((value) => {
+                    
+                            msg = msg + value.name + " x " + value.quantity + "\n"
+                    
                         })
                         let livraisonlieu = await redisclient.get(id + 'lieulivraison');
 
-                        cart = temp
-                        await redisclient.set('cart', JSON.stringify(temp));
-                        //
+                      
 
                         sendMessage(2250789299689, `KIMII.AI vous avez une nouvelle commande N°${numero}\n${msg} du ${id.substring(0, id.length - 15)}\nlieu de livraison:${livraisonlieu}`, 'KIMIIAI', authKeyForDeBings)
 

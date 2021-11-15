@@ -145,12 +145,12 @@ async function start(client) {
 
         if (!message.participant) {
           await StartTyping(client, id);
-          let redisdata = await redis.get(id)
-          let recap = await redis.get(id + 'confirmation');
+          let redisdata = await redis.get(id+"chat")
+          let recap = await redis.get(id+"chat" + 'confirmation');
 
           let action = await ActionDetection(response, data, id, client, redis)
           if (redisdata === "livraison") {
-            Livraison(response, data, id, client, redis, message);
+            Livraison(response, data, id, client, redis, message,cart);
           }
 
           if (response.intent === "oui" && redisdata === "confirmation") {
@@ -174,6 +174,14 @@ async function start(client) {
             await redis.set(id + "chat" + 'confirmation', "finish");
           }
           if (response.intent === "non" && redisdata === "confirmation") {
+            let cartdata = await cart.items()
+            for (let i = 0; i < cartdata.length; i++) {
+              let element = cartdata[i];
+              cart.remove(element.item_id)
+              
+
+            }
+
 
             await SendTextMessage(client, id, `😭 Vous avez annulé la commande`)
             await redis.set(id + "chat", 'nothing');
