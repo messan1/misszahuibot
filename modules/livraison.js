@@ -204,6 +204,12 @@ async function ValidateMessage(response, data, id, client, redisclient, message,
                         })
                         let livraisonlieu = await redisclient.get(id + 'lieulivraison');
 
+                        for (let i = 0; i < cartdata.length; i++) {
+                            let element = cartdata[i];
+                            cart.remove(element.item_id)
+                            
+              
+                          }
                       
 
                         sendMessage(2250789299689, `KIMII.AI vous avez une nouvelle commande N°${numero}\n${msg} du ${id.substring(0, id.length - 15)}\nlieu de livraison:${livraisonlieu}`, 'KIMIIAI', authKeyForDeBings)
@@ -211,6 +217,8 @@ async function ValidateMessage(response, data, id, client, redisclient, message,
 
 
                         await SendTextMessage(client, id, `Nous vous contacterons`)
+
+            
 
 
                     })
