@@ -111,7 +111,7 @@ async function start(client) {
               driver: "redis",
               config: {
                 prefix: process.env.REDIS_PREFIX || "cart",
-                host: process.env.REDIS_HOST || "127.0.0.1",
+                host: process.env.REDIS_HOST || "redishost",
                 password: process.env.REDIS_PASSWORD,
                 port: process.env.REDIS_PORT || 6379
               }
