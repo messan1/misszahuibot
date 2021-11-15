@@ -125,11 +125,12 @@ async function Recap(response, data, id, client, redisclient, message, cart) {
 
 }
 
-async function ValidateMessage(response, data, id, client, redisclient, message) {
+async function ValidateMessage(response, data, id, client, redisclient, message,cart) {
 
     await redisclient.set(id + "chat", "nolivraison")
-    let cartdata = await redisclient.get('cart');
-    cart = JSON.parse(cartdata)
+    let cartdata = await cart.items()
+
+  
     let numero = Math.round(Math.random() * 500)
 
     let livraisonprix = await redisclient.get(id + "chat" + 'prixlivraison');
@@ -149,23 +150,22 @@ async function ValidateMessage(response, data, id, client, redisclient, message)
         numero: id
     }
     let items = []
-    let total = 0;
+    let total = await cart.total();
 
     Object.assign({}, invoice, { "shipping": shipping });
 
-    cart.forEach((value) => {
+    cartdata.forEach((value) => {
         if (value._id === id) {
 
             invoice.items.push(
                 {
-                    item: value.item,
-                    description: value.description,
+                    item: value.name,
+                    description: "value.description",
                     quantity: value.quantity,
-                    amount: value.amount
+                   
                 }
             )
         }
-        total = total + value.amount
 
     })
 

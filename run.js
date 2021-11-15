@@ -154,7 +154,7 @@ async function start(client) {
           }
 
           if (response.intent === "oui" && redisdata === "confirmation") {
-            ValidateMessage(response, data, id, client, redis, message)
+            ValidateMessage(response, data, id, client, redis, message,cart)
             await redis.set(id + "chat" + 'confirmation', "finish");
 
           }
