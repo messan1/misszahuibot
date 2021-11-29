@@ -204,6 +204,41 @@ async function start(client) {
             ShowCart(response, data, id, client, redis, message, cart);
           }
 
+          if (response.intent === "bonjour") {
+            SendFileMessageImage(client, id, Mandjou[0].img, Mandjou[0].question)
+            .then(async response => {
+
+              if (response) {
+                if (Mandjou[0].buttons) {
+
+                  await redisclient.set(id+"chat", "reserve")
+
+                  const buttons = []
+                  Mandjou[0].buttons.forEach(element => {
+                    buttons.push(element)
+                  });
+
+
+                  const buttonMessage = {
+                    contentText: Mandjou[0].butonsContent.contentText,
+                    footerText: Mandjou[0].butonsContent.footerText,
+                    buttons: buttons,
+                    headerType: 1
+                  }
+
+                  await SendButtonMessage(client, id, buttonMessage)
+
+                }
+
+              } else {
+                await StopTyping(client, id);
+              }
+            })
+            .catch(async error => {
+              await StopTyping(client, id);
+
+            })
+          }
           if (data.match(/[+]+[a-zA-Z0-9]{1,2}/gi)) {
             let product = data.match(/[+]+[a-zA-Z0-9]{1,2}/gi)[0]
             product = product.slice(1, product.length)

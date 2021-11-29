@@ -9,154 +9,159 @@ const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 async function Chat(response, usermessage, id, client, redisclient, message, cart) {
 
-  Mandjou.forEach(async (data, key) => {
-    if (data.answers) {
-      for (let i = 0; i < data.answers.length; i++) {
-        if (response.intent === data.answers[i] || usermessage.toLowerCase() === data.answer.toLowerCase()) {
-
-          if (data.img) {
-
-            SendFileMessageImage(client, id, data.img, data.question)
-              .then(async response => {
-
-                if (response) {
-                  if (data.buttons) {
-
-                    await redisclient.set(id+"chat", "reserve")
-
-                    const buttons = []
-                    data.buttons.forEach(element => {
-                      buttons.push(element)
-                    });
-
-
-                    const buttonMessage = {
-                      contentText: data.butonsContent.contentText,
-                      footerText: data.butonsContent.footerText,
-                      buttons: buttons,
-                      headerType: 1
-                    }
-
-                    await SendButtonMessage(client, id, buttonMessage)
-
-                  }
-                  if (data.products) {
-                    data.products.forEach(async product => {
-
-                      await SendFileMessageImage(client, id, product.img, product.text)
-
-                      if (product.buttons) {
-                        await redisclient.set(id+"chat", "reserve")
-
-                        const buttons = []
-                        product.buttons.forEach(element => {
-                          buttons.push(element)
-                        });
-
-
-                        const buttonMessage = {
-                          contentText: product.butonsContent.contentText,
-                          footerText: product.butonsContent.footerText,
-                          buttons: buttons,
-                          headerType: 1
-                        }
-
-                        await SendButtonMessage(client, id, buttonMessage)
-
+  let prd = usermessage.split(/[\s,\/]+/);
+  console.log(prd)
+  prd.forEach(async (value) => {
+    Mandjou.forEach(async (data, key) => {
+      if (data.answers) {
+        for (let i = 0; i < data.answers.length; i++) {
+          if (value.toLowerCase() === data.answer.toLowerCase()) {
+  
+            if (data.img) {
+  
+              SendFileMessageImage(client, id, data.img, data.question)
+                .then(async response => {
+  
+                  if (response) {
+                    if (data.buttons) {
+  
+                      await redisclient.set(id+"chat", "reserve")
+  
+                      const buttons = []
+                      data.buttons.forEach(element => {
+                        buttons.push(element)
+                      });
+  
+  
+                      const buttonMessage = {
+                        contentText: data.butonsContent.contentText,
+                        footerText: data.butonsContent.footerText,
+                        buttons: buttons,
+                        headerType: 1
                       }
-                      await StopTyping(client, id);
-
-                    })
-
-                  }
-                } else {
-                  await StopTyping(client, id);
-                }
-              })
-              .catch(async error => {
-                await StopTyping(client, id);
-
-              })
-          } else {
-            SendTextMessage(client, id, data.question)
-              .then(async response => {
-
-                if (response) {
-
-                  if (data.products) {
-                    data.products.forEach(product => {
-
-                      SendFileMessageImage(client, id, product.img, product.text)
-                        .then(async response => {
-
-                          if (response) {
-                            if (data.buttons) {
-
-                              await redisclient.set(id+"chat", "reserve")
-
-                              const buttons = []
-                              data.buttons.forEach(element => {
-                                buttons.push(element)
-                              });
-
-
-                              const buttonMessage = {
-                                contentText: data.butonsContent.contentText,
-                                footerText: data.butonsContent.footerText,
-                                buttons: buttons,
-                                headerType: 1
-                              }
-
-                              await SendButtonMessage(client, id, buttonMessage)
-
-                            }
-                            if (product.buttons) {
-                              // await redisclient.set(id+"chat", "reserve")
-
-                              const buttons = []
-                              product.buttons.forEach(element => {
-                                buttons.push(element)
-                              });
-
-
-                              const buttonMessage = {
-                                contentText: product.butonsContent.contentText,
-                                footerText: product.butonsContent.footerText,
-                                buttons: buttons,
-                                headerType: 1
-                              }
-                              await SendButtonMessage(client, id, buttonMessage)
-                              // await sleep(1000);
-
-                            }
+  
+                      await SendButtonMessage(client, id, buttonMessage)
+  
+                    }
+                    if (data.products) {
+                      data.products.forEach(async product => {
+  
+                        await SendFileMessageImage(client, id, product.img, product.text)
+  
+                        if (product.buttons) {
+                          await redisclient.set(id+"chat", "reserve")
+  
+                          const buttons = []
+                          product.buttons.forEach(element => {
+                            buttons.push(element)
+                          });
+  
+  
+                          const buttonMessage = {
+                            contentText: product.butonsContent.contentText,
+                            footerText: product.butonsContent.footerText,
+                            buttons: buttons,
+                            headerType: 1
                           }
-                          await StopTyping(client, id);
-
-                        })
-                        .catch(async error => {
-                          await StopTyping(client, id);
-
-                        })
-                    })
-
+  
+                          await SendButtonMessage(client, id, buttonMessage)
+  
+                        }
+                        await StopTyping(client, id);
+  
+                      })
+  
+                    }
+                  } else {
+                    await StopTyping(client, id);
                   }
-                } else {
+                })
+                .catch(async error => {
                   await StopTyping(client, id);
-                }
-              })
-              .catch(async error => {
-                await StopTyping(client, id);
-
-              })
+  
+                })
+            } else {
+              SendTextMessage(client, id, data.question)
+                .then(async response => {
+  
+                  if (response) {
+  
+                    if (data.products) {
+                      data.products.forEach(product => {
+  
+                        SendFileMessageImage(client, id, product.img, product.text)
+                          .then(async response => {
+  
+                            if (response) {
+                              if (data.buttons) {
+  
+                                await redisclient.set(id+"chat", "reserve")
+  
+                                const buttons = []
+                                data.buttons.forEach(element => {
+                                  buttons.push(element)
+                                });
+  
+  
+                                const buttonMessage = {
+                                  contentText: data.butonsContent.contentText,
+                                  footerText: data.butonsContent.footerText,
+                                  buttons: buttons,
+                                  headerType: 1
+                                }
+  
+                                await SendButtonMessage(client, id, buttonMessage)
+  
+                              }
+                              if (product.buttons) {
+                                // await redisclient.set(id+"chat", "reserve")
+  
+                                const buttons = []
+                                product.buttons.forEach(element => {
+                                  buttons.push(element)
+                                });
+  
+  
+                                const buttonMessage = {
+                                  contentText: product.butonsContent.contentText,
+                                  footerText: product.butonsContent.footerText,
+                                  buttons: buttons,
+                                  headerType: 1
+                                }
+                                await SendButtonMessage(client, id, buttonMessage)
+                                // await sleep(1000);
+  
+                              }
+                            }
+                            await StopTyping(client, id);
+  
+                          })
+                          .catch(async error => {
+                            await StopTyping(client, id);
+  
+                          })
+                      })
+  
+                    }
+                  } else {
+                    await StopTyping(client, id);
+                  }
+                })
+                .catch(async error => {
+                  await StopTyping(client, id);
+  
+                })
+            }
+  
+  
           }
-
-
+          break
         }
-        break
       }
-    }
+  
+    })
+  } )
 
-  })
 }
 
 
